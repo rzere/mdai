@@ -6,7 +6,7 @@ import LoginButton from '../components/LoginButton';
 
 export default function Page() {
   const { data: session } = useSession();
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
+  //const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   if (!session) {
     return (

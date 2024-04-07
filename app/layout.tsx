@@ -1,5 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { ReactNode } from 'react';
+import Providers from '../components/Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -8,18 +10,15 @@ export const metadata = {
   description: 'Your Mindful Diabetes Education Companion',
 };
 
-import Providers from '../components/Providers';
+interface RootLayoutProps {
+  children: ReactNode;
+}
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html>
-      <head>
-        {/* ... */}
-      </head>
+    <html lang="en">
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

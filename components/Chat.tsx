@@ -11,12 +11,12 @@ export default function Chat() {
     return (
       <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Header */}
-        <header className="bg-indigo-600 py-4">
+        <header className="bg-[#00a651] py-4">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
             <p className="text-white">Your trusted companion for Type 3 Diabetes</p>
             <button
-              className="bg-white text-indigo-600 px-4 py-2 rounded-md"
+              className="bg-white text-[#00a651] px-4 py-2 rounded-md"
               onClick={() => signIn('google')}
             >
               Login
@@ -35,12 +35,12 @@ export default function Chat() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-indigo-600 py-4">
+      <header className="bg-[#00a651] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
           <p className="text-white">Your AI companion for Type 3 Diabetes</p>
           <button
-            className="bg-white text-indigo-600 px-4 py-2 rounded-md"
+            className="bg-white text-[#00a651] px-4 py-2 rounded-md"
             onClick={() => signOut()}
           >
             Logout
@@ -57,7 +57,7 @@ export default function Chat() {
                 <div
                   key={m.id}
                   className={`p-4 rounded-lg ${
-                    m.role === 'user' ? 'bg-indigo-100' : 'bg-gray-100'
+                    m.role === 'user' ? 'bg-[#00a651] bg-opacity-20' : 'bg-gray-100'
                   }`}
                 >
                   <span className="font-semibold">
@@ -82,7 +82,7 @@ export default function Chat() {
             />
             <button
               type="submit"
-              className="bg-indigo-600 text-white px-4 py-2 rounded-r"
+              className="bg-[#00a651] text-white px-4 py-2 rounded-r"
             >
               Send
             </button>

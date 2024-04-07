@@ -16,7 +16,7 @@ export default function Chat() {
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
             <p className="text-white">Your trusted companion for Type 3 Diabetes</p>
             <button
-              className="bg-white text-[#00a651] px-4 py-2 rounded-md"
+              className="bg-white text-[#f07239] px-4 py-2 rounded-md"
               onClick={() => signIn('google')}
             >
               Login
@@ -26,7 +26,7 @@ export default function Chat() {
 
         {/* Login Message */}
         <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
-          <p className="text-gray-600">Please log in to access the chat.</p>
+          <p className="text-gray-600">Please log in to access mdAI.</p>
         </main>
       </div>
     );

@@ -1,7 +1,7 @@
 'use client';
 
 import { useSession } from 'next-auth/react';
-import { useChat } from 'ai/react';
+//import { useChat } from 'ai/react';
 import LoginButton from '../components/LoginButton';
 
 export default function Page() {

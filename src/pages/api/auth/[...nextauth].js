@@ -16,7 +16,3 @@ export default NextAuth({
     }),
   ],
 });
-
-
-
-const prisma = global.prisma || new PrismaClient();

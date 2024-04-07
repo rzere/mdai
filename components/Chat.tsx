@@ -1,23 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import { useSession } from 'next-auth/react';
+import { useChat } from 'ai/react';
 
 export default function Chat() {
-  const [input, setInput] = useState('');
-  const [messages, setMessages] = useState([]);
+  const { data: session } = useSession();
+  const { messages, input, handleInputChange, handleSubmit } = useChat();
 
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
-  };
+  if (!session) {
+    return (
+      <div className="flex flex-col min-h-screen bg-gray-100">
+        {/* Header */}
+        <header className="bg-indigo-600 py-4">
+          <div className="container mx-auto px-4 flex items-center justify-between">
+            <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
+            <p className="text-white">Your trusted companion for Type 3 Diabetes</p>
+          </div>
+        </header>
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (input.trim()) {
-      setMessages([...messages, { role: 'user', content: input }]);
-      setInput('');
-      // Add logic to handle the chatbot response
-    }
-  };
+        {/* Login Message */}
+        <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
+          <p className="text-gray-600">Please log in to access the chat.</p>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -25,7 +32,7 @@ export default function Chat() {
       <header className="bg-indigo-600 py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
-          <p className="text-white">Your trusted companion for Type 3 Diabetes</p>
+          <p className="text-white">Your AI companion for Type 3 Diabetes</p>
         </div>
       </header>
 
@@ -34,9 +41,9 @@ export default function Chat() {
         <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
           {messages.length > 0 ? (
             <div className="space-y-4 mb-4">
-              {messages.map((m, index) => (
+              {messages.map((m) => (
                 <div
-                  key={index}
+                  key={m.id}
                   className={`p-4 rounded-lg ${
                     m.role === 'user' ? 'bg-indigo-100' : 'bg-gray-100'
                   }`}

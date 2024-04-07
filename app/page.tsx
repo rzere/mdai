@@ -1,11 +1,10 @@
-jsx
 'use client';
 
 import { useSession } from 'next-auth/react';
 import { useChat } from 'ai/react';
-import LoginButton from './LoginButton';
+import LoginButton from '../components/LoginButton';
 
-export default function Chat() {
+export default function Page() {
   const { data: session } = useSession();
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
@@ -21,10 +20,6 @@ export default function Chat() {
           </div>
         </header>
 
-        {/* Login Message */}
-        <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
-          <p className="text-gray-600">Please log in to access the chat.</p>
-        </main>
         {/* Login Message */}
         <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
           <p className="text-gray-600">Please log in to access the chat.</p>

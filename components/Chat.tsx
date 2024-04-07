@@ -11,7 +11,7 @@ export default function Chat() {
     return (
       <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Header */}
-        <header className="bg-[#00a651] py-4">
+        <header className="bg-[#f07239] py-4">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
             <p className="text-white">Your trusted companion for Type 3 Diabetes</p>

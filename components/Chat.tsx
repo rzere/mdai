@@ -1,6 +1,6 @@
 'use client';
 
-import { useSession } from 'next-auth/react';
+import { useSession, signIn, signOut } from 'next-auth/react';
 import { useChat } from 'ai/react';
 
 export default function Chat() {
@@ -15,6 +15,12 @@ export default function Chat() {
           <div className="container mx-auto px-4 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
             <p className="text-white">Your trusted companion for Type 3 Diabetes</p>
+            <button
+              className="bg-white text-indigo-600 px-4 py-2 rounded-md"
+              onClick={() => signIn('google')}
+            >
+              Login
+            </button>
           </div>
         </header>
 
@@ -33,6 +39,12 @@ export default function Chat() {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
           <p className="text-white">Your AI companion for Type 3 Diabetes</p>
+          <button
+            className="bg-white text-indigo-600 px-4 py-2 rounded-md"
+            onClick={() => signOut()}
+          >
+            Logout
+          </button>
         </div>
       </header>
 

@@ -15,7 +15,6 @@ if (!session) {
         <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
-            <p className="text-white">This is a demo by mindfuldiabetes.org, please use mindfully.</p>
             <button
             className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => signIn('google')}
@@ -51,7 +50,6 @@ return (
     <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
-        <p className="text-white">This is a demo by mindfuldiabetes.org, please use mindfully.</p>
         <button
             className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => signOut()}

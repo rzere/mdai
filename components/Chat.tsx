@@ -30,7 +30,7 @@ if (!session) {
         </main>
         {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">
-        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white">
+        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
         For more information, visit our blog.
         </Link>
     </div>
@@ -102,7 +102,7 @@ return (
     </main>
             {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">
-        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white">
+        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
         For more information, visit our blog.
         </Link>
     </div>

@@ -82,7 +82,7 @@ export default function Chat() {
             />
             <button
               type="submit"
-              className="bg-[#00a651] text-white px-4 py-2 rounded-r"
+              className="bg-[#f07239] text-white px-4 py-2 rounded-r"
             >
               Send
             </button>
@@ -90,7 +90,7 @@ export default function Chat() {
         </div>
       </main>
             {/* Footer */}
-            <footer className="bg-[#00a651] py-4 mt-auto">
+            <footer className="bg-[#f07239] py-4 mt-auto">
         <div className="container mx-auto px-4 text-center">
           <p className="text-white">2024 | Stoic.ist</p>
         </div>

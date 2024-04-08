@@ -90,7 +90,7 @@ export default function Chat() {
         </div>
       </main>
             {/* Footer */}
-            <footer className="bg-[#f07239] py-4 mt-auto">
+            <footer className="bg-[#0d1338] py-4 mt-auto">
         <div className="container mx-auto px-4 text-center">
           <p className="text-white">2024 | Stoic.ist</p>
         </div>

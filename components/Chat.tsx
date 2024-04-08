@@ -29,6 +29,18 @@ if (!session) {
         <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
         <p className="text-gray-600">Please log in to access mdAI.</p>
         </main>
+        {/* Blog Link */}
+        <div className="bg-[#0d1338] py-4 mt-auto text-center">
+        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white">
+        For more information, visit our blog.
+        </Link>
+    </div>
+        {/* Footer */}
+        <footer className="bg-[#0d1338] py-4 mt-auto">
+        <div className="container mx-auto px-4 text-center">
+        <p className="text-white">2024 | Stoic.ist</p>
+        </div>
+    </footer>
     </div>
     );
 }

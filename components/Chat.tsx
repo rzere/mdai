@@ -11,12 +11,12 @@ export default function Chat() {
     return (
       <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Header */}
-        <header className="bg-[#f07239] py-4">
+        <header className="bg-[#0d1338] py-4">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
             <p className="text-white">This is a demo by mindfuldiabetes.org, please use mindfully.</p>
             <button
-              className="bg-white text-[#f07239] px-4 py-2 rounded-md"
+              className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
               onClick={() => signIn('google')}
             >
               Login
@@ -35,12 +35,12 @@ export default function Chat() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#00a651] py-4">
+      <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
           <p className="text-white">This is a demo by mindfuldiabetes.org, please use mindfully.</p>
           <button
-            className="bg-white text-[#00a651] px-4 py-2 rounded-md"
+            className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => signOut()}
           >
             Logout

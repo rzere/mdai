@@ -17,7 +17,7 @@ if (!session) {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/logo.jpg"
+              src="/logo.jpeg"
               alt="Mindful Diabetes Logo"
               width={40}
               height={40}

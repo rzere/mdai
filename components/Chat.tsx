@@ -12,7 +12,7 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 if (!session) {
     return (
         <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Header */}
+      {/* Header */} 
       <header className="bg-[#00a651] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">

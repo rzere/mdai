@@ -17,7 +17,7 @@ if (!session) {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/images/logo.jpeg"
+              src="/logo.webp"
               alt="Mindful Diabetes Logo"
               width={40}
               height={40}
@@ -59,7 +59,16 @@ return (
     {/* Header */}
     <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
+        <div className="flex items-center">
+            <Image
+              src="/logo.webp"
+              alt="Mindful Diabetes Logo"
+              width={40}
+              height={40}
+              className="mr-4"
+            />
         <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
+        </div>
         <button
             className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => signOut()}

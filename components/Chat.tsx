@@ -3,6 +3,7 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { useChat } from 'ai/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Chat() {
 const { data: session } = useSession();
@@ -10,11 +11,20 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 
 if (!session) {
     return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
-        {/* Header */}
-        <header className="bg-[#0d1338] py-4">
+        <div className="flex flex-col min-h-screen bg-gray-100">
+      {/* Header */}
+      <header className="bg-[#00a651] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt="Mindful Diabetes Logo"
+              width={40}
+              height={40}
+              className="mr-4"
+            />
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
+          </div>
             <button
             className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => signIn('google')}

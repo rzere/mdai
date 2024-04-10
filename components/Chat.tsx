@@ -125,7 +125,7 @@ return (
             <input
             className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center"
             value={input}
-            placeholder="What is type 3 diabetes?..."
+            placeholder="Press Enter to Submit"
             onChange={handleInputChange}
             />
         </form>

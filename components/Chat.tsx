@@ -95,13 +95,7 @@ return (
           </div>
         </div>
         </header>
-    {/* Speech Bubble */}
-<div className="bg-[#0d1338] py-4 mt-auto flex-center">
-        <img
-          src={`https://raw.githubusercontent.com/rzere/mdai/main/components/pixel-speech-bubble.png`}
-          alt="Speech Bubble"
-        />
-    </div>
+
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex">
         <div className="relative mt-2 rounded-md shadow-sm">
@@ -137,6 +131,13 @@ return (
         </form>
         </div>
     </main>
+            {/* Blog Link */}
+        <div className="bg-[#0d1338] py-4 mt-auto text-center">
+    
+        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
+        For more information, visit our blog.
+        </Link>
+    </div>
             {/* Footer */}
             <footer className="bg-[#0d1338] py-4 mt-auto">
         <div className="container mx-auto px-4 text-center">

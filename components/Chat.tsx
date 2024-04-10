@@ -17,7 +17,7 @@ if (!session) {
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
           <Link href="/" className="flex items-center font-white text-2xl">
           <img
-          src={`https://raw.githubusercontent.com/rzere/mdai/main/components/pixel-speech-bubble.png`}
+          src={`https://leadshark.vercel.app/_next/image?url=%2Flogo.png&w=64&q=75`}
           alt="MD Logo"
         />
           </Link>

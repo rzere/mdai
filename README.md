@@ -1,6 +1,6 @@
  ## Mindful Diabetes AI using -- Vercel AI SDK, Next.js, and Perplexity.ai Chat
 
-## Deploy your own version ---
+## To deploy your own version --- See example below:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=ai-sdk-example):
 

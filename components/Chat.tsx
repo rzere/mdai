@@ -3,7 +3,14 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { useChat } from 'ai/react';
 import Link from 'next/link';
-import Image from 'next/image';
+import {
+  useState,
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useMemo,
+} from "react";
+import Image from "next/image";
 
 export default function Chat() {
 const { data: session } = useSession();
@@ -18,12 +25,18 @@ if (!session) {
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
           </div>
-            <button
-            className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
-            onClick={() => signIn('google')}
-            >
-            Login
-            </button>
+          
+          <button
+          className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
+            onClick={() => {
+              signIn("google");
+            }}
+          >   
+              <>
+                <p>Sign In with Google</p>
+              </>
+          </button>
+        
         </div>
         </header>
 

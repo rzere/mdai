@@ -117,15 +117,15 @@ return (
             </div>
         ) : (
             <p className="text-center text-gray-500">
-            Ask me about Type 3 diabetes...
+        
             </p>
         )}
 
         <form onSubmit={handleSubmit} className="flex">
             <input
-            className="flex-grow p-2 border border-gray-300 rounded-l"
+            className="flex items-center p-2 border border-gray-300 rounded-sm"
             value={input}
-            placeholder="Type your message..."
+            placeholder="What is type 3 diabetes?..."
             onChange={handleInputChange}
             />
             <div>
@@ -133,7 +133,7 @@ return (
             type="submit"
             className="flex bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
             >
-            Send
+            Ask
             </button>
             </div>
         </form>
@@ -148,7 +148,7 @@ return (
             }}
           >   
               <>
-                <p>Logout</p>
+                <p>Log-out</p>
               </>
           </button>
           </div>

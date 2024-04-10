@@ -101,7 +101,7 @@ return (
 
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
-        <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+        <div className="relative mt-2 rounded-md shadow-sm">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">
             {messages.map((m) => (
@@ -133,7 +133,7 @@ return (
             />
             <button
             type="submit"
-            className="bg-[#f07239] text-white px-4 py-2 rounded-r"
+            className="bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
             >
             Send
             </button>

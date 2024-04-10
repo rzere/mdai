@@ -131,12 +131,14 @@ return (
             placeholder="Type your message..."
             onChange={handleInputChange}
             />
+            <div>
             <button
             type="submit"
-            className="bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
+            className="flex-grow bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
             >
             Send
             </button>
+            </div>
         </form>
         </div>
     </main>

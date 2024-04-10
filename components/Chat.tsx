@@ -80,45 +80,45 @@ return (
     </header>
 
     {/* Chat Container */}
-    <main className="flex justify-center items-center w-full h-screen bg-gray-50">
-  <div className="bg-white rounded-lg shadow-md p-6 max-w-md w-full mx-4">
-    {messages.length > 0 ? (
-      <div className="space-y-4 mb-4">
-        {messages.map((m) => (
-          <div
-            key={m.id}
-            className={`p-4 rounded-lg ${
-              m.role === 'user' ? 'bg-blue-100' : 'bg-green-100'
-            }`}
-          >
-            <span className="font-semibold">
-              {m.role === 'user' ? 'You: ' : 'Mindful Diabetes AI: '}
-            </span>
-            <p className="whitespace-pre-wrap">{m.content}</p>
-          </div>
-        ))}
-      </div>
-    ) : (
-      <p className="text-center text-gray-500">
-        Ask me about Type 3 diabetes...
-      </p>
-    )}
+    <main  className="container mx-auto px-4 py-8 flex-grow">
+        <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+        {messages.length > 0 ? (
+            <div className="space-y-4 mb-4">
+            {messages.map((m) => (
+                <div
+                key={m.id}
+                className={`p-4 rounded-lg ${
+                    m.role === 'user' ? 'bg-[#00a651] bg-opacity-20' : 'bg-gray-100'
+                }`}
+                >
+                <span className="font-semibold">
+                    {m.role === 'user' ? 'You: ' : 'Mindful Diabetes AI: '}
+                </span>
+                <p className="whitespace-pre-wrap">{m.content}</p>
+                </div>
+            ))}
+            </div>
+        ) : (
+            <p className="text-center text-gray-500">
+            Ask me about Type 3 diabetes...
+            </p>
+        )}
 
-    <form onSubmit={handleSubmit} className="flex w-full mt-4">
-      <input
-        className="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
-        value={input}
-        placeholder="Type your message..."
-        onChange={handleInputChange}
-      />
-      <button
-        type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-r-lg transition-colors duration-300 ease-in-out"
-      >
-        Send
-      </button>
-    </form>
-  </div>
+        <form onSubmit={handleSubmit} className="flex">
+            <input
+            className="flex-grow p-2 border border-gray-300 rounded-l"
+            value={input}
+            placeholder="Type your message..."
+            onChange={handleInputChange}
+            />
+            <button
+            type="submit"
+            className="bg-[#f07239] text-white px-4 py-2 rounded-r"
+            >
+            Send
+            </button>
+        </form>
+        </div>
     </main>
             {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">

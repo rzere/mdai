@@ -73,10 +73,6 @@ return (
       {/* Header */}
       <header className="bg-gradient-to-br from-gray-50 via-white to-cyan-100 py-4">
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
-      <img
-          src={`https://leadshark.vercel.app/_next/image?url=%2Flogo.png&w=64&q=75`}
-          alt="MD Logo"
-        />
           <Link href="/" className="flex items-center font-white text-2xl">
           </Link>
           <div>
@@ -98,6 +94,10 @@ return (
 
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex">
+    <img
+          src={`https://raw.githubusercontent.com/rzere/mdai/main/components/pixel-speech-bubble.png`}
+          alt="Speech Bubble"
+        />
         <div className="relative mt-2 rounded-md shadow-sm">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">
@@ -133,7 +133,6 @@ return (
     </main>
             {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">
-    
         <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
         For more information, visit our blog.
         </Link>

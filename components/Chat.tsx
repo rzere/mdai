@@ -128,14 +128,6 @@ return (
             placeholder="What is type 3 diabetes?..."
             onChange={handleInputChange}
             />
-            <div>
-            <button
-            type="submit"
-            className="flex bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
-            >
-            Ask
-            </button>
-            </div>
         </form>
         </div>
     </main>

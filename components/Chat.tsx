@@ -74,6 +74,10 @@ return (
       <header className="bg-gradient-to-br from-gray-50 via-white to-cyan-100 py-4">
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
           <Link href="/" className="flex items-center font-white text-2xl">
+          <img
+          src={`https://leadshark.vercel.app/_next/image?url=%2Flogo.png&w=64&q=75`}
+          alt="MD Logo"
+        />
           </Link>
           <div>
             <div className="z-10 w-full px-5 xl:px-0">
@@ -93,11 +97,7 @@ return (
         </header>
 
     {/* Chat Container */}
-    <main  className="container mx-auto px-4 py-8 flex">
-    <img
-          src={`https://raw.githubusercontent.com/rzere/mdai/main/components/pixel-speech-bubble.png`}
-          alt="Speech Bubble"
-        />
+    <main  className="container mx-auto px-4 py-8 flex-grow">
         <div className="relative mt-2 rounded-md shadow-sm">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">

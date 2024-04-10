@@ -47,7 +47,7 @@ if (!session) {
             }}
           >   
               <>
-                <p>Sign In with Google</p>
+                <p>Sign In with Google 🔑</p>
               </>
           </button>
           </div>
@@ -153,7 +153,7 @@ return (
           </button>
           </div>
         </main>
-        
+
             {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">
         <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">

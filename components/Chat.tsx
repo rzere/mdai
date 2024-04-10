@@ -17,7 +17,7 @@ if (!session) {
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
           <Link href="/" className="flex items-center font-white text-2xl">
           <img
-          src={`https://raw.githubusercontent.com/rzere/mdai/main/logo.jpeg`}
+          src={`https://raw.githubusercontent.com/rzere/mdai/main/logo.webp`}
           alt="MD Logo"
         />
           </Link>
@@ -75,7 +75,7 @@ return (
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
           <Link href="/" className="flex items-center font-white text-2xl">
           <img
-          src={`https://raw.githubusercontent.com/rzere/mdai/main/logo.jpeg`}
+          src={`https://raw.githubusercontent.com/rzere/mdai/main/logo.webp`}
           alt="MD Logo"
         />
           </Link>
@@ -97,11 +97,12 @@ return (
         </header>
 
     {/* Chat Container */}
+    
+    <main  className="container mx-auto px-4 py-8 flex-grow">
     <img
           src={`https://raw.githubusercontent.com/rzere/mdai/main/components/pixel-speech-bubble.png`}
           alt="MD Logo"
         />
-    <main  className="container mx-auto px-4 py-8 flex-grow">
         <div className="relative mt-2 rounded-md shadow-sm">
         {messages.length > 0 ? (
             <div className="space-y-4 mb-4">

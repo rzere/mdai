@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   // Ask Perplexity for a streaming chat completion using PPLX 70B online model
   // @see https://blog.perplexity.ai/blog/introducing-pplx-online-llms
   const response = await perplexity.chat.completions.create({
-    model: 'mixtral-8x7b-instruct	',
+    model: 'mixtral-8x7b-instruct',
     stream: true,
     max_tokens: 10000,
     messages,

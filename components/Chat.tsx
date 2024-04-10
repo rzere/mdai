@@ -18,7 +18,7 @@ const { messages, input, handleInputChange, handleSubmit } = useChat();
 
 if (!session) {
     return (
-        <div className="flex flex-col min-h-screen bg-gray-100">
+        <div className="flex flex-col min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
       {/* Header */}
       <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">

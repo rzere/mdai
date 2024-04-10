@@ -131,8 +131,17 @@ return (
         </form>
         </div>
     </main>
-
-    <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
+            {/* Blog Link */}
+        <div className="bg-[#0d1338] py-4 mt-auto text-center">
+        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
+        For more information, visit our blog.
+        </Link>
+    </div>
+            {/* Footer */}
+            <footer className="bg-[#0d1338] py-4 mt-auto">
+        <div className="container mx-auto px-4 text-center">
+        <p className="text-white">2024 | Stoic.ist</p>
+        <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
         <div><button
           className="bg-[#0d1338] text-[#f3f3f3] px-4 py-2 rounded-md"
             onClick={() => {
@@ -145,17 +154,6 @@ return (
           </button>
           </div>
         </main>
-
-            {/* Blog Link */}
-        <div className="bg-[#0d1338] py-4 mt-auto text-center">
-        <Link href="https://mindfuldiabetes.org/guide/#recent" className="text-white underline">
-        For more information, visit our blog.
-        </Link>
-    </div>
-            {/* Footer */}
-            <footer className="bg-[#0d1338] py-4 mt-auto">
-        <div className="container mx-auto px-4 text-center">
-        <p className="text-white">2024 | Stoic.ist</p>
         </div>
     </footer>
     </div>

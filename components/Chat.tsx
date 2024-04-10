@@ -66,18 +66,38 @@ if (!session) {
 
 return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-    {/* Header */}
-    <header className="bg-[#0d1338] py-4">
+          {/* Header */}
+          <header className="bg-[#0d1338] py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
-        <button
-            className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
-            onClick={() => signOut()}
+          <div className="flex items-center">
+            <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
+            <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+        <a
+          href="https://mindfuldiabetes.org"
+          target="_blank"
+          rel="noreferrer"
+          className="mx-auto mb-1 flex max-w-fit items-center justify-center space-x-10 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
-            Logout
-        </button>
+          <p className="text-sm font-semibold text-[#1d9bf0]">
+            by Mindful Diabetes Inc.
+          </p>
+        </a>
         </div>
-    </header>
+          </div>
+          
+          <button
+          className="bg-white text-[#0d1338] px-4 py-2 rounded-md"
+            onClick={() => {
+              signIn("google");
+            }}
+          >   
+              <>
+                <p>Sign In with Google</p>
+              </>
+          </button>
+        
+        </div>
+        </header>
 
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">

@@ -3,14 +3,6 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { useChat } from 'ai/react';
 import Link from 'next/link';
-import {
-  useState,
-  Dispatch,
-  SetStateAction,
-  useCallback,
-  useMemo,
-} from "react";
-import Image from "next/image";
 
 export default function Chat() {
 const { data: session } = useSession();
@@ -24,6 +16,18 @@ if (!session) {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-white">Mindful Diabetes AI</h1>
+            <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+        <a
+          href="https://mindfuldiabetes.org"
+          target="_blank"
+          rel="noreferrer"
+          className="mx-auto mb-1 flex max-w-fit items-center justify-center space-x-10 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+        >
+          <p className="text-sm font-semibold text-[#1d9bf0]">
+            by Mindful Diabetes Inc.
+          </p>
+        </a>
+        </div>
           </div>
           
           <button
@@ -42,7 +46,7 @@ if (!session) {
 
         {/* Login Message */}
         <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
-        <p className="text-gray-600">Please log in to access mdAI.</p>
+        <p className="text-2xl font-bold">Please log in to access mdAI.</p>
         </main>
         {/* Blog Link */}
         <div className="bg-[#0d1338] py-4 mt-auto text-center">

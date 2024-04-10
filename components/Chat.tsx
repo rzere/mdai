@@ -143,7 +143,7 @@ return (
         <p className="text-white">2024 | Stoic.ist</p>
         <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
         <div><button
-          className="bg-[#0d1338] text-[#f3f3f3] px-4 py-2 rounded-md"
+          className="bg-[#f3f3f3] text-[#0d1338] px-4 py-2 rounded-md"
             onClick={() => {
               signOut();
             }}

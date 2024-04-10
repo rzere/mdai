@@ -1,8 +1,6 @@
-2# Vercel AI SDK, Next.js, and Perplexity.ai Chat Example
+ ## Mindful Diabetes AI using -- Vercel AI SDK, Next.js, and Perplexity.ai Chat
 
-This example shows how to use the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) and [Perplexity.ai](https://perplexity.ai) to create a ChatGPT-like AI-powered streaming chat bot. Perplexity's APIs are compatible with OpenAI's so we use the OpenAI JS SDK but change its base URL to point to Perplexity's API with an environment variable.
-
-## Deploy your own
+## To deploy your own version --- See example below:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=ai-sdk-example):
 

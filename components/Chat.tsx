@@ -96,6 +96,20 @@ return (
         </div>
         </header>
 
+        <main className="container mx-auto px-4 py-8 flex-grow flex items-center justify-center">
+        <div><button
+          className="bg-[#0d1338] text-[#f3f3f3] px-4 py-2 rounded-md"
+            onClick={() => {
+              signOut();
+            }}
+          >   
+              <>
+                <p>Logout</p>
+              </>
+          </button>
+          </div>
+        </main>
+
     {/* Chat Container */}
     <main  className="container mx-auto px-4 py-8 flex-grow">
         <div className="relative mt-2 rounded-md shadow-sm">
@@ -131,7 +145,7 @@ return (
             <div>
             <button
             type="submit"
-            className="flex-grow bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
+            className="flex bg-[#f07239] text-white px-4 py-2 mb-4 rounded-md shadow-sm"
             >
             Send
             </button>

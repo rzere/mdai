@@ -1,14 +1,33 @@
-'use client';
+// components/LoginButton.tsx
+import React from 'react';
 
-import { signIn } from 'next-auth/react';
+const LoginButton = () => {
+  const handleLogin = async () => {
+    // Replace 'username' with the actual username of the logged-in user
+    const username = 'exampleUser';
 
-export default function LoginButton() {
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username }),
+      });
+
+      if (response.ok) {
+        console.log('Login logged successfully');
+      } else {
+        console.error('Failed to log login');
+      }
+    } catch (error) {
+      console.error('Error logging login:', error);
+    }
+  };
+
   return (
-    <button
-      className="bg-white text-indigo-600 px-4 py-2 rounded-md"
-      onClick={() => signIn('google')}
-    >
-      Login
-    </button>
+    <button onClick={handleLogin}>Log In</button>
   );
-}
+};
+
+export default LoginButton;

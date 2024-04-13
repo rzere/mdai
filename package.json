@@ -15,7 +15,8 @@
     "openai": "4.16.1",
     "pg": "^8.11.5",
     "react": "18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@vercel/postgres": "latest"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",

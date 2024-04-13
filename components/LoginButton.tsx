@@ -3,8 +3,7 @@ import React from 'react';
 
 const LoginButton = () => {
   const handleLogin = async () => {
-    // Replace 'username' with the actual username of the logged-in user
-    const username = 'exampleUser';
+    const email = 'exampleUser';
 
     try {
       const response = await fetch('/api/login', {
@@ -12,7 +11,7 @@ const LoginButton = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username }),
+        body: JSON.stringify({ email }),
       });
 
       if (response.ok) {

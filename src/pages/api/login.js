@@ -3,11 +3,11 @@ import { sql } from '@vercel/postgres';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { username } = req.body;
+    const { email } = req.body;
 
     try {
       // Insert or update the user's login information in the User table
-      await sql`INSERT INTO "User" (username, login_time) VALUES (${username}, NOW()) ON CONFLICT (username) DO UPDATE SET login_time = NOW();`;
+      await sql`INSERT INTO "User" (username, login_time) VALUES (${email}, NOW()) ON CONFLICT (username) DO UPDATE SET login_time = NOW();`;
 
       res.status(200).json({ message: 'Login logged successfully' });
     } catch (error) {
